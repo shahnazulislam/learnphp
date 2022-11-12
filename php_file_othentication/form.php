@@ -1,25 +1,15 @@
 <?php
-/*   $var = 38;
 
-   var_dump(filter_var($var,FILTER_VALIDATE_FLOAT));
-   $options = array(
-    "option" => array(
-        "main_range"=>20,
-        "max_range"=>30
-    )
-    );
+  $var = "shahnazulislam@gmail.com";
 
-    if(filter_var($var, FILTER_VALIDATE_FLOAT, $iptions)){
-        echo "<br>$var is float";
-    }else{
-        echo "<br>$var is not float";
-    }*/
+  var_dump(filter_var($var,FILTER_VALIDATE_EMAIL));
 
-    $shakil = 10;
-    $sumon = 20;
+if(filter_var($var, FILTER_VALIDATE_EMAIL, $iptions)){
+    echo "<br>$var is valid email";
+}else{
+    echo "<br>$var is not valid email";
+}
 
-    $sujon = $shakil + $sumon;
 
-    echo $sujon;
 
 ?>
