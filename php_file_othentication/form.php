@@ -16,6 +16,4 @@
     }
     echo "test my working directory";
     
-    
-
 ?>
