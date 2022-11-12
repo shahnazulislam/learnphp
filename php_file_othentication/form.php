@@ -1,5 +1,5 @@
 <?php
-   $var = 38;
+/*   $var = 38;
 
    var_dump(filter_var($var,FILTER_VALIDATE_FLOAT));
    $options = array(
@@ -13,6 +13,13 @@
         echo "<br>$var is float";
     }else{
         echo "<br>$var is not float";
-    }
+    }*/
+
+    $shakil = 10;
+    $sumon = 20;
+
+    $sujon = $shakil + $sumon;
+
+    echo $sujon;
 
 ?>
