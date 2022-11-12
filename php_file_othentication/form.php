@@ -14,6 +14,5 @@
     }else{
         echo "<br>$var is not float";
     }
-    echo "test my working directory";
-    
+
 ?>
