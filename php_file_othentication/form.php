@@ -15,6 +15,8 @@
         echo "<br>$var is not float";
     }
 
+    echo "stringstringstringstring";
+
     
     
 
