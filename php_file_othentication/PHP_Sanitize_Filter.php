@@ -23,7 +23,7 @@ if(filter_var($var, FILTER_VALIDATE_EMAIL)){
 }else{
   echo "<br>$var is not an valid email.";
 }
- 
+
 */
 
 //FILTER_SANITIZE_URL - 02
@@ -108,7 +108,7 @@ INPUT_ENV
  ?>
 
 
- <!DOCTYPE html>
+ <!-- <!DOCTYPE html>
  <html lang="en">
  <head>
      <meta charset="UTF-8">
@@ -116,39 +116,61 @@ INPUT_ENV
      <title>Document</title>
  </head>
  <body>
-    <form method="get" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+    <form method="get" action="<?php //echo $_SERVER['PHP_SELF']; ?>">
         <label>Marks:</label>
         <input type="text" name="marks" autocomplete="off">
         <input type="submit" name="submit" value="submit">
         <br/>
 
-        <?php 
-            if (isset($_REQUEST['submit'])) {
-              $options =array(
-                "options" => array(
-                  "min_range" => 1,
-                  "max_range" => 100,
-                )
-              );
-              if (filter_input(INPUT_POST, "marks",    FILTER_VALIDATE_INT, $options)) {
-                echo ("
-                  <script>
-                    alert('marks is valid');
-                  </script>
-                ");
-                }else{
-                  echo "
-                  <script>
-                    alert('marks is invalid')
-                  </script>
-                  ";
-                };
-            };
+          <?php
+            // if (isset($_REQUEST['submit'])) {
+            //   $options =array(
+            //     "options" => array(
+            //       "min_range" => 1,
+            //       "max_range" => 100,
+            //     )
+            //   );
+            //   if (filter_input(INPUT_POST, "marks",    FILTER_VALIDATE_INT, $options)) {
+            //     echo ("
+            //       <script>
+            //         alert('marks is valid');
+            //       </script>
+            //     ");
+            //     }else{
+            //       echo "
+            //       <script>
+            //         alert('marks is invalid')
+            //       </script>
+            //       ";
+            //     };
+            // };
           ?>
-
     </form>
-     
  </body>
- </html>
+ </html> -->
 
+<?php
+  //file system topic:-
+  // readfile();
+  // flie_exists();
+  // copy();
+  // rename();
+  // mkdir();
+  // rmdir();
+  // delete();
+  // unlink();
+  // filesize();
+  // filetype();
+  // realpath();
+  // pathinfo();
+  // dirname();
+  // basename();
+$file = "readme.txt";
 
+    if (file_exists("readme.txt")) {
+        echo readfile("readme.txt");
+        copy("readme.txt", "newfile.txt");
+    }else {
+        echo "file does not exists";
+}
+?>
